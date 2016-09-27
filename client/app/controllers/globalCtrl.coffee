@@ -1,7 +1,7 @@
 'use strict'
 
 $ = require 'jquery'
-_ = require 'underscore'
+_ = require 'lodash'
 
 class Root
   constructor: ($rootScope, $state, $timeout)->

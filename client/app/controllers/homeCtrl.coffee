@@ -1,6 +1,6 @@
 'use strict'
 $ = require 'jquery'
-_ = require 'underscore'
+_ = require 'lodash'
 
 class Controller
   constructor: ($rootScope, $scope, $state)->

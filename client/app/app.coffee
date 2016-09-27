@@ -7,7 +7,7 @@ require 'angular-sanitize'
 
 config = (new (require('./config'))[0])
 routers = require './routes'
-gobalCtrl = require './controllers/globalCtrl'
+globalCtrl = require './controllers/globalCtrl'
 
 # $ = require 'jquery'
 # window.$ = $
@@ -25,7 +25,7 @@ app = angular.module config.appName, [
 ]
 
 app.config routers
-app.run gobalCtrl
+app.run globalCtrl
 
 # =================================
 # Require after the App is init

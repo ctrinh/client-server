@@ -13,6 +13,50 @@ class Routers
         templateUrl: '/assets/views/home.html'
         controller: 'HomeCtrl'
 
+# ==============================
+# Contact
+# ==============================
+      .state
+          name: 'contact'
+          url: '/contact'
+          templateUrl: '/assets/views/contact.html'
+          controller: 'HomeCtrl'
+
+# ==============================
+# Privacy Policy
+# ==============================
+      .state
+          name: 'privacyPolicy'
+          url: '/privacyPolicy'
+          templateUrl: '/assets/views/privacypolicy.html'
+          controller: 'HomeCtrl'
+
+# ==============================
+# Terms of Service
+# ==============================
+    .state
+        name: 'termsofservice'
+        url: '/termsofservice'
+        templateUrl: '/assets/views/termsofservice.html'
+        controller: 'HomeCtrl'
+
+# ==============================
+# Project
+# ==============================
+      .state
+          name: 'project'
+          url: '/project'
+          templateUrl: '/assets/views/project.html'
+          controller: 'HomeCtrl'
+
+# ==============================
+# Project Display
+# ==============================
+      .state
+          name: 'projectDisplay'
+          url: '/projectDisplay'
+          templateUrl: '/assets/views/projectdisplay.html'
+          controller: 'HomeCtrl'
 
 # ==============================
 # 404

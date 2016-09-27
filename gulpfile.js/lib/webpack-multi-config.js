@@ -5,6 +5,7 @@ var path            = require('path')
 var pathToUrl       = require('./pathToUrl')
 var webpack         = require('webpack')
 var webpackManifest = require('./webpackManifest')
+var ProvidePlugin   = require('webpack/lib/ProvidePlugin')
 
 module.exports = function(env) {
   var jsSrc = path.resolve(config.root.src, config.tasks.js.src)
@@ -20,7 +21,13 @@ module.exports = function(env) {
 
   var webpackConfig = {
     context: jsSrc,
-    plugins: [],
+    plugins: [
+      new ProvidePlugin({
+        jQuery: 'jquery',
+        $: 'jquery',
+        jquery: 'jquery'
+      })
+    ],
     resolve: {
       root: jsSrc,
       extensions: [''].concat(extensions)
