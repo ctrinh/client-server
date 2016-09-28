@@ -43,6 +43,8 @@ module.exports = function(env) {
           test: /\.coffee$/,
           loader: "coffee-loader",
           exclude: /node_modules/
+        },{ test: /bootstrap[\/\\]dist[\/\\]js[\/\\]umd[\/\\]/,
+          loader: 'imports?jQuery=jquery'
         }
       ]
     }
