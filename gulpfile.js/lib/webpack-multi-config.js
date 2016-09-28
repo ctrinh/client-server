@@ -25,7 +25,10 @@ module.exports = function(env) {
       new ProvidePlugin({
         jQuery: 'jquery',
         $: 'jquery',
-        jquery: 'jquery'
+        jquery: 'jquery',
+        _: 'lodash',
+        "Tether": 'tether',
+        "window.Tether": "tether"
       })
     ],
     resolve: {

@@ -4,15 +4,13 @@ require 'angular-ui-router'
 require 'angular-ui-bootstrap'
 require 'ui-select'
 require 'angular-sanitize'
+# Need to initialize bootstrap js when page load
+require 'bootstrap'
+
 
 config = (new (require('./config'))[0])
 routers = require './routes'
 globalCtrl = require './controllers/globalCtrl'
-
-# $ = require 'jquery'
-# window.$ = $
-# window.jQuery = $
-# require './../static/assets/libs/bootstrap/dist/js/bootstrap.min.js'
 
 # =================================
 # Init
