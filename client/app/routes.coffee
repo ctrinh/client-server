@@ -14,6 +14,17 @@ class Routers
         controller: 'HomeCtrl'
 
 # ==============================
+# admin login
+# ==============================
+    .state
+        name: 'adminlogin'
+        url: '/adminlogin'
+        templateUrl: '/assets/views/adminlogin.html'
+        controller: 'HomeCtrl'
+
+
+
+# ==============================
 # Contact
 # ==============================
       .state

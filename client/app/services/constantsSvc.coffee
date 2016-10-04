@@ -5,6 +5,7 @@ class Service
     return obj =
       storage: 'local'
       apiVersion: '/api/v1'
+      clients: ['google', 'yahoo', 'ge']
 
 # ==============================
 # Return main services
