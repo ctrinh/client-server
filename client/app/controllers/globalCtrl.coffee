@@ -4,7 +4,7 @@
 class Root
   constructor: ($rootScope, $state, $timeout)->
 
-    console.log 'This is your Global Controller'
+    console.log 'This is the Global Controller'
 
     $(window).scrollTop(0)
 
