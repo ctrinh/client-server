@@ -1,0 +1,44 @@
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" ui-sref="index" title="Mission Control">MC</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-left">
+        <li ui-sref-active="active"><a ui-sref="jobs.index"><div class="line"></div>Jobs</a></li>
+        <li ui-sref-active="active"><a ui-sref="clients.index"><div class="line"></div>Clients</a></li>
+        <li ui-sref-active="active"><a ui-sref="jobs.archive"><div class="line"></div>Archive</a></li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <!-- <li ui-sref-active="active"><a ui-sref="integrations.index"><span class="fa fa-wrench"></span> <span class="icon-text">Integration</span></a></li> -->
+
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="fa fa-cog" title="setting"></span> <span class="icon-text">Setting</span></a>
+          <ul class="dropdown-menu">
+            <li ui-sref-active="active" ><a ui-sref="integrations.index">Integration</a></li>
+            <!-- <li><a href="#">Setting</a></li> -->
+            <!-- <li><a href="#">Support</a></li> -->
+            <li><a ui-sref="logout">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div id="alert-main" class="alert" ng-class="globalAlert.type" role="alert" ng-show="globalAlert.open" ng-click="closeAlert()">
+  <span class="pull-right fa fa-times"></span>
+  <div class="msg" ng-bind-html="globalAlert.msg"></div>
+</div>
+

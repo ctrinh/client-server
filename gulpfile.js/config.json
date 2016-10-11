@@ -1,0 +1,73 @@
+{
+  "root": {
+    "src": "./client",
+    "dest": "./public"
+  },
+
+  "tasks": {
+    "browserSync": {
+      "server": {
+        "baseDir": "public"
+      }
+    },
+
+    "static": {
+      "src": "static",
+      "dest": "./"
+    },
+
+    "js": {
+      "src": "app",
+      "dest": "assets/js",
+      "entries": {
+        "app": ["./app.coffee"]
+      },
+      "extensions": ["js", "json", "coffee"],
+      "babel": {
+        "presets": ["es2015", "stage-1"],
+        "plugins": []
+      },
+      "extractSharedJs": false
+    },
+
+    "css": {
+      "src": "sass",
+      "dest": "assets/css",
+      "autoprefixer": {
+        "browsers": ["last 3 version"]
+      },
+      "sass": {
+        "indentedSyntax": true
+      },
+      "extensions": ["sass", "scss", "css"]
+    },
+
+
+    "html": {
+      "src": "views",
+      "dest": "assets/views",
+      "htmlmin": {
+        "collapseWhitespace": true
+      },
+      "extensions": ["html", "json"],
+      "excludeFolders": []
+    },
+
+    "images": {
+      "src": "img",
+      "dest": "assets/img",
+      "extensions": ["jpg", "png", "svg", "gif"]
+    },
+
+    "production" : {
+      "rev": true
+    },
+
+    "foreman": {
+      "procfile": "Procfile_DEV",
+      "port": 5001,
+      "env": ".env"
+    }
+
+  }
+}

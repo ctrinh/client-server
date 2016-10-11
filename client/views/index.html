@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="no-js" lang="" ng-app="app">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Client Server</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- Angular tags to remove hash in url -->
+    <base href="/">
+    <meta name="fragment" content="!">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="/assets/libs/bootstrap/dist/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+
+    <!-- Scripts -->
+    <script src="/assets/libs/modernizr/modernizr.js"></script>
+
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+
+
+
+    <main ui-view autoscroll="false">
+      <h1 class="text-center">Waiting for angular to load...</h1>
+    </main>
+
+    <a ui-sref="clientselection">Client Selection</a>
+    <a ui-sref="contact">Contact</a>
+    <a ui-sref="termsofservice">Terms of Service</a>
+    <a ui-sref="adminlogin">Admin</a>
+
+
+    <!-- Scripts -->
+    <script src="/assets/js/shared.js"></script>
+    <script src="/assets/js/app.js"></script>
+
+  </body>
+</html>
