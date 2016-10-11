@@ -20,7 +20,7 @@ class Routers
         name: 'adminlogin'
         url: '/adminlogin'
         templateUrl: '/assets/views/adminlogin.html'
-        controller: 'adminloginCtrl'
+        controller: 'HomeCtrl'
 
 
 
@@ -31,7 +31,7 @@ class Routers
           name: 'contact'
           url: '/contact'
           templateUrl: '/assets/views/contact.html'
-          controller: 'contactCtrl'
+          controller: 'HomeCtrl'
 
 # ==============================
 # Privacy Policy
@@ -40,7 +40,7 @@ class Routers
           name: 'privacyPolicy'
           url: '/privacyPolicy'
           templateUrl: '/assets/views/privacypolicy.html'
-          controller: 'privacypolicyCtrl'
+          controller: 'HomeCtrl'
 
 # ==============================
 # Terms of Service
@@ -49,10 +49,10 @@ class Routers
         name: 'termsofservice'
         url: '/termsofservice'
         templateUrl: '/assets/views/termsofservice.html'
-        controller: 'termsofserviceCtrl'
+        controller: 'HomeCtrl'
 
 # ==============================
-# Project Display
+# Project
 # ==============================
       .state
           name: 'project'
@@ -60,39 +60,14 @@ class Routers
           templateUrl: '/assets/views/project.html'
           controller: 'HomeCtrl'
 
-
 # ==============================
-# Project Display for clients
-# ==============================
-    .state
-        name: 'clientProjectView'
-        # domain.com/ab/k2h345kjh235l4k?type=web
-        url: '/sh/:{id}(0,2)/:{hash}?type'
-        templateUrl: '/assets/views/projectView.html'
-        controller: 'HomeCtrl'
-
-        dropbox.com/sh/h432ij5h4kl23/hjk543h2lkhj345?type
-
-# ==============================
-# Project Display for admin
-# ==============================
-    .state
-        name: 'adminProjectView'
-        # domain.com/1P/zoo_3000_test/v1
-        url: '/:{client}/:{projectname}/:{projectversion}'
-        templateUrl: '/assets/views/projectView.html'
-        controller: 'HomeCtrl'
-
-
-
-# ==============================
-# Client Selection
+# Project Display
 # ==============================
       .state
-          name: 'clientselection'
-          url: '/clientselection'
-          templateUrl: '/assets/views/clientselection.html'
-          controller: 'clientselectionCtrl'
+          name: 'projectDisplay'
+          url: '/projectDisplay'
+          templateUrl: '/assets/views/projectdisplay.html'
+          controller: 'HomeCtrl'
 
 # ==============================
 # 404
