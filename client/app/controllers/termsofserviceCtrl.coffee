@@ -3,16 +3,14 @@ $ = require 'jquery'
 _ = require 'lodash'
 
 class Controller
-  constructor: ($rootScope, $scope, $state, ConstantsSvc)->
+  constructor: ($rootScope, $scope, $state)->
 
 # ==============================
 # Init
 # ==============================
-    # Default
+# Default
     $(window).scrollTop(0)
-    console.log 'This is your Home controller'
-
-    console.log ConstantsSvc
+    console.log 'This is the Terms of Service controller'
 
 
 # ==============================
@@ -22,6 +20,5 @@ module.exports = [
   '$rootScope'
   '$scope'
   '$state'
-  'ConstantsSvc'
   Controller
 ]
